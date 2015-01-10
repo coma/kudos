@@ -18,7 +18,7 @@ body {
 }
 .navbar{
 	background-color:#fff;
-	height: 90px;
+	height: 60px;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 .kudos,
@@ -41,9 +41,9 @@ p.darKudo{
 	margin-right:10px;
 }
 .navbar .userImage{
-	margin-top: 15px;
-	width: 50px;
-	height: 50px;
+	margin-top: 9px;
+	width: 40px;
+	height: 40px;
 }
 h3.teamHeader{
 	text-align: center;
@@ -100,4 +100,46 @@ a.darKudo{
 }
 
 
+.kudoUnit{
+	padding: 15px;
+	display:block;
+	border-bottom:1px solid #d2d2d2;
+	overflow: hidden;
+	clear: both;
+}
+.kudoUnit .userImage{
+	width: 68px;
+	height: 68px;
+}
+
+.kudoUnit:first-child{
+	border-top:1px solid #d2d2d2;
+}
+
+.kudoText{
+	background-color:#4d4d4d;
+	color:#fff;
+	font: italic normal  26px 'Open Sans', sans-serif;
+	padding: 25px;
+	float: left;
+	min-height: 133px;
+	width: 70%;
+	margin-right: 10px;
+}
+.kudoMensaje .userImage{
+	width: 133px;
+	height: 133px;
+	float: left;
+}
+.kudoMensaje{
+	margin-top:0px;
+	margin-left:80px;
+	overflow: hidden;
+}
+.tiempo{
+	display: block;
+	font: normal 10px 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	padding-top:13px;
+}
 

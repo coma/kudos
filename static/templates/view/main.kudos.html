@@ -1,7 +1,10 @@
-<h1 class="page-header">Kudos</h1>
-<ul>
-    <li ng-repeat="kudo in kudos">
-        <p>{{ kudo.comment }}</p>
-        <p>{{ kudo.moment.fromNow() }}</p>
-    </li>
-</ul>
+<div class="kudosTimeline" ng-repeat="kudo in kudos">
+    <div class="kudoUnit">
+        <img ng-src="images/avatar/{{ kudo.memberFrom.nick }}.png" alt="Foto" class="userImage kudoDa">
+        <p><strong>{{ kudo.memberFrom.name }}</strong> le ha dado un KUDO a <strong>{{ kudo.memberTo.name }}</strong></p>
+        <div class="kudoMensaje">
+            <p class="kudoText">{{ kudo.comment }} <span class="tiempo">{{ kudo.moment.fromNow() }}</span></p>
+            <img ng-src="images/avatar/{{ kudo.memberTo.nick }}.png" alt="Foto" class="userImage kudoRecibe">
+        </div>
+    </div>
+</div>
