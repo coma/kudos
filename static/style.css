@@ -2,6 +2,7 @@ body {
 	padding-top: 110px;
 	padding-bottom: 30px;
 	background:#f8f8f8 url(images/bg-web.jpg) no-repeat 50% 0;
+	background-attachment: fixed;
 	font-family: 'Open Sans', sans-serif;
 	color:#282828;
 }
@@ -143,3 +144,27 @@ a.darKudo{
 	padding-top:13px;
 }
 
+.boxCenter img{
+	margin:60px 0 20px;
+}
+.boxCenter p{
+	font: normal 16px 'Open Sans', sans-serif;
+	padding: 0;
+}
+
+.boxCenter button{
+	background-color: #5ee5f7;
+	border-color:#5ee5f7;
+	font: bold 14px 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}

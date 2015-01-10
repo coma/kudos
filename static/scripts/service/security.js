@@ -52,10 +52,6 @@ app.factory('securityService', function (config, $rootScope, $state, $parse, api
                     }
 
                     return user;
-                })
-                .catch(function () {
-
-                    service.logout();
                 });
         }
     };

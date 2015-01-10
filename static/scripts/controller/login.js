@@ -6,9 +6,14 @@ app.controller('login', function ($scope, securityService) {
 
         securityService
             .login(credentials.nick)
-            .finally(function () {
+            .then(function () {
 
                 $scope.credentials = {};
+            })
+            .catch(function () {
+
+                securityService.logout();
+                alert('Wrong credentials?');
             });
     };
 });
