@@ -27,8 +27,10 @@ app.directive('user', function(securityService, kudoApiService) {
 
                 kudoApiService
                     .post({
-                        memberTo: user.nick,
-                        comment : comment
+                        comment : comment,
+                        memberTo: {
+                            nick: user.nick
+                        }
                     });
             };
         }

@@ -3,7 +3,7 @@ var app = angular.module('app', ['ui.router']);
 app.constant('config', {
     api  : '/api',
     index: 'private.main',
-    login: 'public'
+    login: 'public.login'
 });
 
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -17,6 +17,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
         .state('public', {
+            url        : '',
+            abstract   : true,
+            template   : '<ui-view></ui-view>'
+        })
+        .state('public.login', {
             url        : '/login',
             templateUrl: 'templates/view/login.html',
             controller : 'login'
