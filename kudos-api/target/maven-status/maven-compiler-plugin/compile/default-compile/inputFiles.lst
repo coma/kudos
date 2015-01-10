@@ -1,3 +1,9 @@
-/Users/juan/Documents/git/workspace-test/gs-rest-service-initial/src/main/java/hello/Application.java
-/Users/juan/Documents/git/workspace-test/gs-rest-service-initial/src/main/java/hello/GreetingController.java
-/Users/juan/Documents/git/workspace-test/gs-rest-service-initial/src/main/java/hello/Greeting.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/Application.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/DatabaseConfiguration.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/kudos/team/TeamMemberController.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/Greeting.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/GreetingController.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/kudos/team/TeamMemberMongoRepository.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/kudos/activity/Activity.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/GreetingMongoRepository.java
+/Users/juan/Documents/git/kudos/kudos-api/src/main/java/hello/kudos/team/TeamMember.java
