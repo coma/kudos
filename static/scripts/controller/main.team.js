@@ -10,7 +10,7 @@ app.controller('main.team', function ($scope, teamApiService) {
             });
     };
 
-    $scope.$on('refresh', function () {
+    $scope.$on('kudo.refresh', function () {
 
         fetch();
     });

@@ -2,5 +2,6 @@
 <ul>
     <li ng-repeat="kudo in kudos">
         <p>{{ kudo.comment }}</p>
+        <p>{{ kudo.moment.fromNow() }}</p>
     </li>
 </ul>

@@ -1,0 +1,90 @@
+body {
+	padding-top: 110px;
+	padding-bottom: 30px;
+	background-color:#f8f8f8;
+	font-family: 'Open Sans', sans-serif;
+	color:#282828;
+}
+.navbar{
+	background-color:#fff;
+	height: 90px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.kudos,
+.team{
+	padding:0;
+	box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.team{
+	background-color:#fff;
+}
+.userImage,
+.userData,
+p.darKudo{
+	float:left;
+}
+.userImage{
+	width: 68px;
+	height: 68px;
+	margin-right:10px;
+}
+.navbar .userImage{
+	margin-top: 15px;
+	width: 50px;
+	height: 50px;
+}
+h3.teamHeader{
+	text-align: center;
+	font: normal 30px/70px 'Open Sans', sans-serif !important;
+	border-bottom:1px solid #d2d2d2;
+	padding: 0;
+}
+.user{
+	display:block;
+	border-bottom:1px solid #d2d2d2;
+	overflow: hidden;
+}
+.user:first-child{
+	border-top:1px solid #d2d2d2;
+}
+
+.userName{
+	font: bold 18px/18px 'Open Sans', sans-serif;
+	padding: 5px 0;
+	margin: 0;
+}
+.kudosCount{
+	float: left;
+	padding-left: 32px;
+	padding-right: 40px;
+	background: transparent url(images/kudos-ico.gif) no-repeat 0 0;
+	font: normal 10px/10px 'Open Sans', sans-serif;
+	color: #247e8a;
+	text-align: center;
+	text-transform: uppercase;
+}
+.kudosCount li{
+	padding-right:16px;
+	margin-top: -2px;
+}
+
+.kudosNumber{
+	font: bold 26px/26px 'Open Sans', sans-serif;
+	display: block;
+}
+a.darKudo{
+	background-color: #5ee5f7;
+	border-color:#5ee5f7;
+	font: bold 14px 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+
+.kudosTimeline{
+	background-color: #fff;
+	margin-right: 20px;
+	height: 300px;
+}
+
+
+

@@ -1,6 +1,19 @@
-<div>
-    <p>{{ user.name }}</p>
-    <p ng-if="!isMe(user)">
-        <a ng-click="kudo(user)" href="">Kudo!</a>
-    </p>
+<div class="user">
+    <img ng-src="images/avatar/{{ user.nick }}.png" alt="Foto" class="userImage">
+    <div class="userData">
+        <h3 class="userName">{{ user.name }}</h3>
+        <ul class="kudosCount nav nav-pills">
+            <li class="kudosDados">
+                <span class="kudosNumber">{{ user.kudosOut }}</span>
+                <span class="enviados">dados</span>
+            </li>
+            <li class="kudosDados">
+                <span class="kudosNumber">{{ user.kudosIn }}</span>
+                <span class="recibidos">recibidos </span>
+            </li>
+        </ul>
+        <p class="darKudo" ng-if="!isMe(user)">
+            <a ng-click="kudo(user)" href="" class="btn btn-sm btn-primary darKudo">Dar Kudo</a>
+        </p>
+    </div>
 </div>

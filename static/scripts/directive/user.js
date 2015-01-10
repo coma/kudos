@@ -16,10 +16,19 @@ app.directive('user', function(securityService, kudoApiService) {
 
             scope.kudo = function (user) {
 
+                var comment = prompt('Leave a message dude!');
+
+                if (!comment) {
+
+                    alert('Sorry... no comment no kudo!');
+
+                    return;
+                }
+
                 kudoApiService
                     .post({
                         memberTo: user.nick,
-                        comment : prompt('Leave a message dude!')
+                        comment : comment
                     });
             };
         }
