@@ -1,7 +1,6 @@
 package hello;
 
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicLong;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +19,6 @@ public class GreetingController {
 	private final Logger log = LoggerFactory.getLogger(GreetingController.class);
 	
     private static final String TEMPLATE = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
 
     @Value("${server.port}")
     private String test;

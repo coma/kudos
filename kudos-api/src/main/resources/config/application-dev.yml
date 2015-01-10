@@ -18,6 +18,9 @@ spring:
         mode: XHTML
         cache: false
         viewNames: error
+    jackson:
+        serialization:
+            write_dates_as_timestamps:true
 
 metrics:
     jmx.enabled: true

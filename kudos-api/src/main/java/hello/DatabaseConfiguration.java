@@ -3,8 +3,6 @@ package hello;
 
 import javax.inject.Inject;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 import org.springframework.context.annotation.Bean;
@@ -21,8 +19,6 @@ import com.mongodb.Mongo;
 @EnableMongoRepositories
 @Import(value = MongoAutoConfiguration.class)
 public class DatabaseConfiguration extends AbstractMongoConfiguration  {
-
-    private final Logger log = LoggerFactory.getLogger(DatabaseConfiguration.class);
 
     @Inject
     private Mongo mongo;

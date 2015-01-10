@@ -1,9 +1,10 @@
 package hello.kudos.kudo;
 
+import hello.kudos.team.TeamMember;
+
 import java.io.Serializable;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.joda.time.LocalDateTime;
 import org.springframework.data.annotation.Id;
 
 public class Kudo implements Serializable{
@@ -12,16 +13,16 @@ public class Kudo implements Serializable{
 	@Id
     private String id;
     private String comment;
-    private String memberFrom;
-    private String memberTo;
-    private LocalDateTime timestamp;
+    private TeamMember memberFrom;
+    private TeamMember memberTo;
+    private Long timestamp;
     
     public Kudo(){
     	
     }
 
-	public Kudo(String comment, String memberFrom, String memberTo,
-			LocalDateTime timestamp) {
+	public Kudo(String comment, TeamMember memberFrom, TeamMember memberTo,
+			Long timestamp) {
 		super();
 		this.comment = comment;
 		this.memberFrom = memberFrom;
@@ -29,11 +30,11 @@ public class Kudo implements Serializable{
 		this.timestamp = timestamp;
 	}
 
-	public LocalDateTime getTimestamp() {
+	public Long getTimestamp() {
 		return timestamp;
 	}
 
-	public void setTimestamp(LocalDateTime timestamp) {
+	public void setTimestamp(Long timestamp) {
 		this.timestamp = timestamp;
 	}
 
@@ -45,19 +46,19 @@ public class Kudo implements Serializable{
 		this.comment = comment;
 	}
 
-	public String getMemberFrom() {
+	public TeamMember getMemberFrom() {
 		return memberFrom;
 	}
 
-	public void setMemberFrom(String memberFrom) {
+	public void setMemberFrom(TeamMember memberFrom) {
 		this.memberFrom = memberFrom;
 	}
 
-	public String getMemberTo() {
+	public TeamMember getMemberTo() {
 		return memberTo;
 	}
 
-	public void setMemberTo(String memberTo) {
+	public void setMemberTo(TeamMember memberTo) {
 		this.memberTo = memberTo;
 	}
 

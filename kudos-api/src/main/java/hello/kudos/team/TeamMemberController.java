@@ -6,6 +6,8 @@ import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,11 +24,14 @@ public class TeamMemberController {
     private TeamMemberMongoRepository repository;
     
     @RequestMapping(value="/teammember/{nick}", method=RequestMethod.GET)
-    public TeamMember getByNick(@PathVariable String nick) {
+    public ResponseEntity<TeamMember> getByNick(@PathVariable String nick) {
     	log.debug("Requesting team member: " + nick);
         TeamMember member = repository.findOne(nick);
+        if(member == null){
+        	return new ResponseEntity<TeamMember>(HttpStatus.NOT_FOUND);
+        }
         log.debug(member.toString());
-        return member;
+        return new ResponseEntity<TeamMember>(member, HttpStatus.OK);
     }
     
     @RequestMapping(value="/teammember", method=RequestMethod.GET)
