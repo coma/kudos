@@ -24,9 +24,8 @@ public class TeamMemberController {
     @RequestMapping(value="/teammember/{nick}", method=RequestMethod.GET)
     public TeamMember getByNick(@PathVariable String nick) {
     	log.debug("Requesting team member: " + nick);
-        TeamMember member = new TeamMember("juan","Juan", 23, 21);
-        
-        
+        TeamMember member = repository.findOne(nick);
+        log.debug(member.toString());
         return member;
     }
     

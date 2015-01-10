@@ -1,9 +1,11 @@
 hello/DatabaseConfiguration.class
 hello/Application.class
+hello/GreetingController.class
+hello/kudos/team/TeamMemberMongoRepository.class
+hello/kudos/kudo/Kudo.class
 hello/kudos/team/TeamMember.class
 hello/kudos/team/TeamMemberController.class
-hello/GreetingController.class
 hello/Greeting.class
-hello/kudos/team/TeamMemberMongoRepository.class
+hello/kudos/kudo/KudoMongoRepository.class
 hello/GreetingMongoRepository.class
-hello/kudos/activity/Activity.class
+hello/kudos/kudo/KudoController.class

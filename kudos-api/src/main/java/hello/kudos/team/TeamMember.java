@@ -43,6 +43,9 @@ public class TeamMember implements Serializable{
 	public int getKudosIn() {
 		return kudosIn;
 	}
+	public void incrementKudoIn(){
+		this.kudosIn++;
+	}
 	public void setKudosIn(int kudosIn) {
 		this.kudosIn = kudosIn;
 	}
