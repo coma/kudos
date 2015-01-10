@@ -1,4 +1,4 @@
-yc.factory('apiService', function(config, $q, $http) {
+app.factory('apiService', function(config, $q, $http, storageService) {
 
     var getURL = function (url) {
 
@@ -8,8 +8,7 @@ yc.factory('apiService', function(config, $q, $http) {
     var http = function (method, url, params, data) {
 
         var headers = {
-            'Remove-WWW-Authenticate': true,
-            Authorization            : session.get('auth')
+            Nick: storageService.session.get('nick')
         };
 
         var cancel = $q.defer();

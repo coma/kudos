@@ -1,0 +1,8 @@
+<form name="form" novalidate="novalidate" autocomplete="off" ng-submit="login(credentials, form)">
+    <p>
+        <input type="text" placeholder="Hey there, give me your nick!" required="required" ng-model="credentials.nick"/>
+    </p>
+    <p>
+        <button type="submit" ng-disabled="!form.$valid">go!</button>
+    </p>
+</form>

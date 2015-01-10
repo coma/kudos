@@ -1,4 +1,4 @@
-yc.factory('momentService', function() {
+app.factory('momentService', function() {
 
     return {
         parse: function() {

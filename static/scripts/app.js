@@ -1,10 +1,9 @@
-var app      = angular.module('app', ['ui.router']),
-    resolver = {};
+var app = angular.module('app', ['ui.router']);
 
 app.constant('config', {
-    api  : 'http://192.168.20.168/api',
-    index: 'main',
-    login: 'login'
+    api  : '/api',
+    index: 'private.main',
+    login: 'public'
 });
 
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -17,24 +16,29 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     });
 
     $stateProvider
-        .state('login', {
+        .state('public', {
             url        : '/login',
-            templateUrl: 'template/view/login.html',
+            templateUrl: 'templates/view/login.html',
             controller : 'login'
         })
-        .state('main', {
-            url  : '/',
+        .state('private', {
+            url        : '/',
+            abstract   : true,
+            templateUrl: 'templates/view/main.html'
+        })
+        .state('private.main', {
+            url  : '',
             views: {
                 'header': {
-                    templateUrl: 'template/view/main.header.html',
+                    templateUrl: 'templates/view/main.header.html',
                     controller : 'main.header'
                 },
                 'team': {
-                    templateUrl: 'template/view/main.team.html',
+                    templateUrl: 'templates/view/main.team.html',
                     controller : 'main.team'
                 },
                 'kudos': {
-                    templateUrl: 'template/view/main.kudos.html',
+                    templateUrl: 'templates/view/main.kudos.html',
                     controller : 'main.kudos'
                 }
             }
