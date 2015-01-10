@@ -1,0 +1,32 @@
+div.badgebanner
+    badge(name="{{ category }}")
+
+form(name="form", novalidate, autocomplete="off", ng-submit="book(data, form)")
+
+    label.block Preferred Date
+
+    date-input.row(required, ng-model="data.date", min="today")
+
+    label.block.row Collection
+        div.toggle
+            input(type="checkbox", ng-model="data.collection")
+            span
+
+    label.block.row Delivery
+        div.toggle
+            input(type="checkbox", ng-model="data.delivery")
+            span
+
+    label.block.row Clean
+        div.toggle
+            input(type="checkbox", ng-model="data.clean")
+            span
+
+    label.block.row Courtesy Car
+        div.toggle
+            input(type="checkbox", ng-model="data.courtesy")
+            span
+
+    textarea.row(placeholder="Any other comments", ng-model="data.comments")
+
+    button.row(type="submit", ng-disabled="!form.$valid") submit
