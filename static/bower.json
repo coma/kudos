@@ -1,0 +1,24 @@
+{
+    "name"        : "Kudos",
+    "description" : "Kudos!",
+    "homepage"    : "http://none.nowhere",
+    "version"     : "0.0.0",
+    "license"     : "None",
+    "private"     : true,
+    "authors"     : [],
+    "keywords"    : [],
+    "ignore"      : [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular"                    : "^1.3",
+        "angular-ui-router"          : "^0.2",
+        "emitter.js"                 : "^1",
+        "moment"                     : "^2.8",
+        "exif-js"                    : "*"
+    }
+}

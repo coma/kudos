@@ -1,0 +1,18 @@
+<div class="container">
+
+      <div class="boxCenter">
+        <form name="form" novalidate="novalidate" autocomplete="off" ng-submit="login(credentials, form)" class="form-signin">
+          <img src="images/kudosapp-logo.png" alt="Kudos App">
+          <p>Entra y empieza a animar a tus compañeros</p>
+          <p>¡Vamos equipo!</p>
+          <label for="inputEmail" class="sr-only">Usuario</label>
+          <input type="text" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus ng-model="credentials.nick">
+          <label for="inputPassword" class="sr-only" required>Contraseña</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="credentials.password">
+          <div class="checkbox">
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" ng-disabled="!form.$valid">Entrar</button>
+        </form>
+      </div>
+
+    </div>
